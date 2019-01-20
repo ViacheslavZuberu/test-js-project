@@ -1,0 +1,28 @@
+{
+  "name": "test-js-project",
+  "version": "1.0.0",
+  "description": "Dialog",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ViacheslavZuberu/test-js-project.git"
+  },
+  "keywords": [
+    "Dialog",
+    "jQuery",
+    "UI"
+  ],
+  "author": "Viacheslav",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ViacheslavZuberu/test-js-project/issues"
+  },
+  "homepage": "https://github.com/ViacheslavZuberu/test-js-project#readme",
+  "dependencies": {
+    "jquery": "^3.3.1",
+    "jquery-ui-dist": "^1.12.1"
+  }
+}
