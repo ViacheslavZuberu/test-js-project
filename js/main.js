@@ -32,6 +32,14 @@ let dateOptions = {
     dateFormat: "dd.mm.yy"
 };
 
-$("#faryd").datepicker(dateOptions);
-$("#my-window").dialog(options);
-$("#tabs").tabs();
+let tabsOptions = {
+    show: { effect: "slide", duration: 500 },
+    collapsible: true,
+    active: 2
+};
+
+$(function() {
+    $("#faryd").datepicker(dateOptions);
+    $("#my-window").dialog(options);
+    $("#tabs").tabs(tabsOptions);
+});
