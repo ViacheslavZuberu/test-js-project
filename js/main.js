@@ -1,5 +1,5 @@
 let options = {
-    autoOpen: false,
+    title: "Test Window #1",
     modal: true,
     width: 500,
     buttons: {
@@ -11,8 +11,11 @@ let options = {
     }
 };
 
+$("#birthday").datepicker({
+    changeYear: true,
+    monthNames: ["Январь", "Февраль", "Март", "Апрель", "Май"],
+    dayNamesMin: ["Вс", "Пн", "Вт", "Ср", "Чт", "Пт", "Сб"],
+    dateFormat: "dd.mm.yy"
+});
 $("#my-window").dialog(options);
-
-setTimeout(() => {
-    $("#my-window").dialog("open");
-}, 2000);
+$("#tabs").tabs();
