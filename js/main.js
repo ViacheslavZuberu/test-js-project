@@ -38,15 +38,19 @@ let dateOptions = {
 let tabsOptions = {
     show: { effect: "slide", duration: 500 },
     collapsible: true,
-    active: 2
+    active: 1
+};
+
+let accordionOptions = {
+    header: ".a-row > h3",
+    collapsible: true
 };
 
 $(function() {
     $("#faryd").datepicker(dateOptions);
     $("#my-window").dialog(options);
     $("#tabs").tabs(tabsOptions);
-    $("#accordion").accordion({
-        header: ".a-row > h3",
-        collapsible: true
-    });
+    $("#accordion").accordion(accordionOptions);
+    $("#loader").css("display", "none");
+    $(".hider").css("display", "none");
 });
