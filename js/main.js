@@ -4,10 +4,13 @@ let options = {
     width: 500,
     buttons: {
         OK: function() {
-            console.log("Hello, World!");
+            console.log("OK");
             $(this).dialog("close");
         },
-        Cancel: function() {}
+        Cancel: function() {
+            console.log("Cancel");
+            $(this).dialog("close");
+        }
     }
 };
 
@@ -42,4 +45,8 @@ $(function() {
     $("#faryd").datepicker(dateOptions);
     $("#my-window").dialog(options);
     $("#tabs").tabs(tabsOptions);
+    $("#accordion").accordion({
+        header: ".a-row > h3",
+        collapsible: true
+    });
 });

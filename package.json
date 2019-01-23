@@ -22,6 +22,7 @@
   },
   "homepage": "https://github.com/ViacheslavZuberu/test-js-project#readme",
   "dependencies": {
+    "bootstrap": "^4.2.1",
     "jquery": "^3.3.1",
     "jquery-ui-dist": "^1.12.1"
   }
